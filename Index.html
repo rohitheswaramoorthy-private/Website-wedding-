@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" src="assets/music.mp3" loop></audio>
+<button id="musicBtn">🔊</button>
+
+<!-- PAGE 1 -->
+<section class="page page1">
+  <img src="assets/ganesha.png" class="ganesha">
+  <div class="enter-text">Tap to Enter</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page page2">
+
+  <div class="temple-layer">
+    <img src="assets/temple.png" class="temple-img">
+  </div>
+
+  <div class="content">
+    <h1 class="names">Sudhankumar & Sowmiya</h1>
+
+    <div class="events">
+      <div>Wedding: 28 May 2026</div>
+      <div>Reception: 29 May 2026</div>
+    </div>
+
+    <button onclick="openMap()">View Venue</button>
+  </div>
+
+</section>
+
+<!-- PAGE 3 -->
+<section class="page page3">
+  <h2>Send Wishes 💌</h2>
+
+  <form action="https://formsubmit.co/rohitheswaramoorthy@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <textarea name="message" placeholder="Your Wishes" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- CANVAS -->
+<canvas id="butterflyCanvas"></canvas>
+<canvas id="flowers"></canvas>
+<canvas id="petals"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>

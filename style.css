@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
+  background: #FFFFF0;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* PAGE 1 */
+.page1 {
+  background: radial-gradient(circle, #fff8e7, #fff);
+}
+
+.ganesha {
+  width: 220px;
+  animation: float 4s infinite ease-in-out;
+}
+
+.enter-text {
+  color: gold;
+  margin-top: 20px;
+}
+
+/* PAGE 2 */
+.page2 {
+  position: relative;
+  background: linear-gradient(#FFFFF0, #fff5e6);
+}
+
+.temple-layer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.temple-img {
+  width: 90%;
+  max-width: 500px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.names {
+  font-family: 'Great Vibes';
+  font-size: 2.8rem;
+  color: gold;
+}
+
+/* PAGE 3 */
+.page3 {
+  background: #fffaf0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 300px;
+}
+
+input, textarea {
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: gold;
+  border: none;
+}
+
+/* MUSIC BUTTON */
+#musicBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* CANVAS */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* ANIMATION */
+@keyframes float {
+  50% { transform: translateY(-15px); }
+}
